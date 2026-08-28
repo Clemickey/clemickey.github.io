@@ -11,6 +11,10 @@
 <meta property="og:title" content="Clement Okun | Finance &amp; Operations Professional">
 <meta property="og:description" content="Finance and economics graduate turned operator. Executive support, B2B sales, CRM administration, and financial operations experience. Based in Naivasha, Kenya, open to remote roles worldwide.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://clemickey.github.io/preview.jpg">
+<meta property="og:image:width" content="752">
+<meta property="og:image:height" content="1029">
+<meta name="twitter:image" content="https://clemickey.github.io/preview.jpg">
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Clement Okun | Finance &amp; Operations Professional">
@@ -236,10 +240,42 @@
     color:#78877E;
     margin-top:8px;
   }
+  .ledger{
     background:var(--paper);
     border:1px solid var(--line);
     margin-top:56px;
   }
+  .work-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:2px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .work-item{
+    background:var(--paper);
+    padding:24px;
+  }
+  .work-item .icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:var(--ink);
+    color:var(--paper);
+    margin-bottom:14px;
+  }
+  .work-item .icon svg{width:16px; height:16px;}
+  .work-item h4{
+    font-family:'IBM Plex Sans', sans-serif;
+    font-weight:600;
+    font-size:15px;
+    margin:0 0 6px;
+    color:var(--ink);
+  }
+  .work-item p{margin:0; font-size:13.5px; color:#565E58;}
   .ledger-head{
     display:flex;
     justify-content:space-between;
@@ -523,7 +559,8 @@
       <div>
         <div class="eyebrow">Finance &amp; Economics, Kabarak University</div>
         <h1>Trained to read a balance sheet.<br>Built a business to <span class="accent">learn the rest.</span></h1>
-        <p class="lede">I'm an economics and finance graduate who didn't wait for a corporate role to start operating. Between a finance seat at Flamingo and building Vibeora from nothing, I've picked up the sales, CRM, and client management skills that come from actually running things, not just studying them.</p>
+        <p class="lede"><strong>I keep operations running and pipelines moving when the person in charge can't be everywhere at once.</strong> That's what an executive got for 18 months, what Vibeora's clients get today, and what I bring to a finance or operations seat: someone who closes gaps instead of creating them.</p>
+        <p class="lede" style="margin-top:14px; font-size:15.5px;">I'm an economics and finance graduate who didn't wait for a corporate role to start operating. Between a finance seat at Flamingo and building Vibeora from nothing, I've picked up the sales, CRM, and client management skills that come from actually running things, not just studying them.</p>
         <div class="cta-row">
           <a href="mailto:okunclement@gmail.com" class="btn primary">Email me</a>
           <a href="https://linkedin.com/in/clementokun2308001" class="btn">LinkedIn ↗</a>
@@ -803,9 +840,39 @@
   </div>
 </section>
 
+<section>
+  <div class="wrap">
+    <div class="section-head"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3"/><path d="M12 18v3"/><path d="M3 12h3"/><path d="M18 12h3"/><circle cx="12" cy="12" r="5"/></svg></span><span class="num">04</span><h2>How I work</h2></div>
+    <p class="skills-lede">The scope changes by role. This is what stays the same.</p>
+    <div class="work-grid">
+      <div class="work-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h4>Reliability first</h4>
+        <p>Deadlines and follow ups get handled before they become someone else's problem, not after.</p>
+      </div>
+      <div class="work-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
+        <h4>Build the system, not just the task</h4>
+        <p>SOPs, CRM pipelines, and tracking tools that outlast the immediate ask, so the work doesn't reset each time.</p>
+      </div>
+      <div class="work-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 12h8"/><path d="M8 8h8"/><path d="M8 16h5"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg></div>
+        <h4>Clear, low friction communication</h4>
+        <p>Updates that answer the question before it's asked, whether that's an executive, a client, or a teammate.</p>
+      </div>
+      <div class="work-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4v16h16"/><path d="M8 15l3-3 3 2 4-5"/></svg></div>
+        <h4>Numbers over guesses</h4>
+        <p>The finance background means decisions get checked against data first, not just instinct.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="alt">
   <div class="wrap">
-    <div class="section-head"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-2-1.2L14 3h-4l-.5 2.6a7 7 0 0 0-2 1.2l-2.4-1-2 3.4 2 1.6A7 7 0 0 0 5 12a7 7 0 0 0 .1 1.2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 2 1.2L10 21h4l.5-2.6a7 7 0 0 0 2-1.2l2.4 1 2-3.4-2-1.6c.07-.4.1-.8.1-1.2z"/></svg></span><span class="num">04</span><h2>What I bring</h2></div>
+    <div class="section-head"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-2-1.2L14 3h-4l-.5 2.6a7 7 0 0 0-2 1.2l-2.4-1-2 3.4 2 1.6A7 7 0 0 0 5 12a7 7 0 0 0 .1 1.2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 2 1.2L10 21h4l.5-2.6a7 7 0 0 0 2-1.2l2.4 1 2-3.4-2-1.6c.07-.4.1-.8.1-1.2z"/></svg></span><span class="num">05</span><h2>What I bring</h2></div>
+
     <p class="skills-lede">Each of these came from doing the work, not just reading about it: a finance grounding on one side, and hands on operating experience on the other.</p>
     <div class="skills-grid">
       <div class="skill-card">
@@ -852,7 +919,7 @@
 
 <section>
   <div class="wrap">
-    <div class="section-head"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 21l5-3 5 3-1.5-8.5"/></svg></span><span class="num">05</span><h2>Certifications</h2></div>
+    <div class="section-head"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 21l5-3 5 3-1.5-8.5"/></svg></span><span class="num">06</span><h2>Certifications</h2></div>
     <div class="cert-list">
       <div class="cert-item"><div class="mark">§</div><div><h4>HubSpot AEO Fundamentals</h4><p>August 2026</p></div></div>
       <div class="cert-item"><div class="mark">§</div><div><h4>HubSpot Digital Marketing</h4><p>August 2026</p></div></div>
