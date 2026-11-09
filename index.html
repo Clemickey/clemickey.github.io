@@ -259,6 +259,22 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
 .bar-value{font-weight:600}
 </style>
 
+<style id="chart-v7">
+.hrow{display:grid;grid-template-columns:70px 1fr 38px;gap:8px;align-items:center;margin-bottom:8px;font:8px 'IBM Plex Mono',monospace;color:#59665F}
+.vrow{grid-template-columns:1fr auto;gap:4px 8px;margin:9px 0 0}.vrow span{grid-column:1;grid-row:1}.vrow b{grid-column:2;grid-row:1}.vrow .htrack{grid-column:1/-1;grid-row:2;height:12px}
+.htrack{position:relative;height:10px;background:#E4EAE6}.htrack i{display:block;height:100%;background:#6C9B89}
+.hrow b{color:#24473C;text-align:right}.hcap{font:8px 'IBM Plex Mono',monospace;color:#6C7871;line-height:1.5}
+.meter{position:relative;height:6px;background:#E0E8E3;margin-top:10px}.meter i{display:block;height:100%;background:#6C9B89}
+.steps{display:grid;gap:6px}.step{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:center;padding:7px 8px;background:#F1F4F2;font-size:10px;color:#33443C}
+.step b{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#1E6355;color:#fff;font:9px 'IBM Plex Mono',monospace}
+.kpimap{display:grid}.kpirow{display:grid;grid-template-columns:1.2fr .8fr 1.4fr;gap:8px;padding:8px 4px;border-top:1px solid #E7EBE8;font-size:9px;color:#46534C;align-items:center}
+.kpirow.head{border-top:0;font:8px 'IBM Plex Mono',monospace;text-transform:uppercase;color:#737F78}.kpirow b{font:600 10px 'IBM Plex Sans',sans-serif;color:#17332D}
+.journey{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:9px}
+.jstage{background:#F4F7F4;padding:14px;border-top:3px solid #6C9B89}.jstage small{display:block;font:8px 'IBM Plex Mono',monospace;color:#75827A;text-transform:uppercase}
+.jstage strong{display:block;font:600 16px 'Fraunces',serif;color:#17332D;margin:5px 0}.jstage span{display:block;font-size:10px;color:#5E6B63;line-height:1.45}
+@media(max-width:820px){.journey{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.journey{grid-template-columns:1fr}.kpirow{grid-template-columns:1fr 1fr}.kpirow span:last-child{grid-column:span 2}}
+</style>
 </head>
 <body>
 
@@ -302,16 +318,16 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
 <section id="results" class="alt">
   <div class="wrap">
     <div class="section-head"><span class="num">01</span><h2>Results at a glance</h2></div>
-    <p class="section-intro">A quick view of selected outcomes and scale from my experience. These figures are presented as portfolio metrics based on the work and results I have previously documented.</p>
+    <p class="section-intro">A quick view of selected outcomes and scale from my experience. These figures are approximate and drawn from my own work records.</p>
     <div class="results-grid reveal">
-      <div class="result-card"><div class="result-number">15%</div><div class="result-label">NPL reduction</div><div class="result-note">Through stronger credit appraisal and risk controls.</div></div>
-      <div class="result-card"><div class="result-number">30%</div><div class="result-label">Faster reviews</div><div class="result-note">Through streamlined financial review workflows.</div></div>
-      <div class="result-card"><div class="result-number">50</div><div class="result-label">Clients acquired</div><div class="result-note">Built from zero through structured sales and follow up.</div></div>
-      <div class="result-card"><div class="result-number">~92%</div><div class="result-label">Customer satisfaction</div><div class="result-note">Across a high volume customer support environment.</div></div>
-      <div class="result-card"><div class="result-number">~90%</div><div class="result-label">First contact resolution</div><div class="result-note">Focused on resolving customer issues efficiently.</div></div>
-      <div class="result-card"><div class="result-number">International</div><div class="result-label">Trips coordinated</div><div class="result-note">Planned and coordinated across the executive support engagement.</div></div>
+      <div class="result-card"><div class="result-number">50</div><div class="result-label">Clients acquired</div><div class="result-note">Grown from zero in nine months through discounted pricing and referrals.</div></div>
+      <div class="result-card"><div class="result-number">13</div><div class="result-label">Deals signed</div><div class="result-note">Business development at Waji Limited, with 100 or more outbound calls a week.</div></div>
+      <div class="result-card"><div class="result-number">80 to 100</div><div class="result-label">Emails managed daily</div><div class="result-note">Executive inbox prioritization, drafting and follow ups.</div></div>
+      <div class="result-card"><div class="result-number">~92%</div><div class="result-label">Customer satisfaction</div><div class="result-note">At Airtel, handling about 150 calls a day.</div></div>
+      <div class="result-card"><div class="result-number">3%</div><div class="result-label">Sales conversion</div><div class="result-note">Monthly sales conversion at Vibeora, up from 0.2% at the start.</div></div>
+      <div class="result-card"><div class="result-number">20+</div><div class="result-label">Trips coordinated</div><div class="result-note">International itineraries and logistics for a UK based executive.</div></div>
       <div class="result-card"><div class="result-number">10+</div><div class="result-label">Hours saved weekly</div><div class="result-note">Through recurring task systems, SOPs, and better organization.</div></div>
-      <div class="result-card"><div class="result-number">150/day</div><div class="result-label">Customer interactions</div><div class="result-note">Resolved and documented across high volume support work.</div></div>
+      <div class="result-card"><div class="result-number">150/day</div><div class="result-label">Customer interactions</div><div class="result-note">Calls handled and documented at Airtel Kenya.</div></div>
     </div>
   </div>
 </section>
@@ -324,22 +340,22 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
       <article class="case-card featured reveal">
         <div class="case-number">01 · EXECUTIVE SUPPORT</div>
         <h3>Keeping an executive's operations moving</h3>
-        <div class="case-meta">18 month remote engagement · UK based executive</div><p>Kept a UK based executive on top of a moving schedule by triaging the inbox, coordinating meetings and international travel, tracking follow ups, and keeping recurring reports and time sensitive deliverables from slipping.</p><div class="case-results"><div><strong>~100%</strong><span>On time delivery</span></div><div><strong>International</strong><span>Trips coordinated</span></div><div><strong>10+ hrs</strong><span>Weekly time saved</span></div></div><a class="case-link" href="#executive-support">View the workflow <span>↓</span></a>
+        <div class="case-meta">Six year remote engagement, 2020 to 2025 · UK based executive</div><p>Kept a UK based executive on top of a moving schedule by triaging the inbox, coordinating meetings and international travel, tracking follow ups, and keeping recurring reports and time sensitive deliverables from slipping.</p><div class="case-results"><div><strong>~100%</strong><span>On time delivery</span></div><div><strong>20+</strong><span>International trips</span></div><div><strong>10+ hrs</strong><span>Weekly time saved</span></div></div><a class="case-link" href="#executive-support">View the workflow <span>↓</span></a>
       </article>
       <article class="case-card reveal">
         <div class="case-number">02 · CRM &amp; SALES</div>
         <h3>Building a client pipeline from zero</h3>
-        <div class="case-meta">Vibeora Beauty and Wellness Co.</div><p>Built Vibeora from a $0 starting point to approximately $500+ in monthly sales by following leads from first enquiry to purchase, staying in touch after the sale, and turning good service and product quality into referral driven growth.</p><div class="case-results"><div><strong>$0 → $500+</strong><span>Monthly sales</span></div><div><strong>5%</strong><span>New sale discount</span></div></div><a class="case-link" href="#crm">View the pipeline <span>↓</span></a>
+        <div class="case-meta">Vibeora Beauty and Wellness Co.</div><p>Grew Vibeora from zero to approximately 50 clients in nine months through discounted client pricing and referrals from served clients, and built a lead management automation across HubSpot, Gmail, WhatsApp, Google Sheets and Calendly.</p><div class="case-results"><div><strong>0 → 50</strong><span>Clients in nine months</span></div><div><strong>Automated</strong><span>Lead follow up</span></div></div><a class="case-link" href="#crm">View the pipeline <span>↓</span></a>
       </article>
       <article class="case-card reveal">
         <div class="case-number">03 · CUSTOMER OPERATIONS</div>
         <h3>Turning high volume support into resolution</h3>
-        <div class="case-meta">Airtel Kenya · Mozzart</div><p>Worked through around 150 customer calls a day across billing, network, account and activation issues, using Zendesk, Zoho, Freshdesk, Gong and Balto to investigate cases, guide conversations, document outcomes and escalate issues that needed specialist help.</p><div class="case-results"><div><strong>150/day</strong><span>Calls</span></div><div><strong>~92%</strong><span>CSAT</span></div><div><strong>~90%</strong><span>FCR</span></div></div><a class="case-link" href="#customer-operations">View the customer flow <span>↓</span></a>
+        <div class="case-meta">Airtel Kenya · 2021 to 2024</div><p>Handled around 150 calls a day at Airtel Kenya across complaints, account activation and order processing, resolving issues diplomatically, running regular account checks and training peers.</p><div class="case-results"><div><strong>~150/day</strong><span>Calls</span></div><div><strong>~92%</strong><span>CSAT</span></div></div><a class="case-link" href="#customer-operations">View the customer flow <span>↓</span></a>
       </article>
       <article class="case-card reveal">
         <div class="case-number">04 · FINANCE &amp; CREDIT</div>
         <h3>Using financial analysis to support better credit decisions</h3>
-        <div class="case-meta">Credit analysis and financial operations</div><p>Reviewed borrower financial information, calculated repayment capacity measures, ran risk checks and monitored portfolio warning signs, then organised the findings so senior analysts could make the final credit decision.</p><div class="case-results"><div><strong>15%</strong><span>NPL reduction</span></div><div><strong>30%</strong><span>Faster reviews</span></div></div><a class="case-link" href="#finance">View the analysis <span>↓</span></a>
+        <div class="case-meta">Credit analysis and financial operations</div><p>Reviewed client financial and credit documentation, applied risk control checklists and monitored portfolios for early default signs under senior analyst guidance, so senior analysts could make the final credit decision.</p><div class="case-results"><div><strong>18 months</strong><span>Credit analyst role</span></div><div><strong>Faster</strong><span>Routine approvals</span></div></div><a class="case-link" href="#finance">View the analysis <span>↓</span></a>
       </article>
       <article class="case-card reveal">
         <div class="case-number">05 · PRODUCT ANALYTICS</div>
@@ -365,9 +381,9 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
             <li>Coordinated international trips from booking through itinerary checks, ground transport and last minute changes.</li>
             <li>Tracked follow ups and time sensitive deliverables.</li>
             <li>Built SOPs and reusable templates for recurring work.</li>
-            <li>Prepared reports, briefs, and presentations.</li>
+            <li>Prepared reports, presentations, and operational documents.</li>
           </ul>
-          <div class="study-stats"><div class="study-stat"><strong>~100%</strong><span>On time</span></div><div class="study-stat"><strong>International</strong><span>Trips coordinated</span></div><div class="study-stat"><strong>10+ hrs</strong><span>Saved weekly</span></div></div>
+          <div class="study-stats"><div class="study-stat"><strong>~100%</strong><span>On time</span></div><div class="study-stat"><strong>20+</strong><span>International trips</span></div><div class="study-stat"><strong>10+ hrs</strong><span>Saved weekly</span></div></div>
         </div>
         <div class="mock-window">
           <div class="mock-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="mock-title">EXECUTIVE SUPPORT WORKSPACE · PORTFOLIO DEMONSTRATION</span></div>
@@ -376,11 +392,11 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
             <div class="calendar-head"><strong>Executive schedule</strong><span class="mock-label">09:00 · 17:00</span></div>
             <div class="calendar-grid">
               <span class="day">M</span><span class="day">T</span><span class="day">W</span><span class="day">T</span><span class="day">F</span><span class="day">S</span><span class="day">S</span>
-              <span class="day active">4</span><span class="day">5</span><span class="day event">6</span><span class="day">7</span><span class="day active">8</span><span class="day">9</span><span class="day">10</span>
+              <span class="day active">9</span><span class="day">10</span><span class="day event">11</span><span class="day">12</span><span class="day active">13</span><span class="day">14</span><span class="day">15</span>
             </div>
             <div class="exec-panels">
               <div class="panel"><h4>Travel itinerary</h4><div class="panel-row"><span>LHR → NBO</span><span class="status">CONFIRMED</span></div><div class="panel-row"><span>Hotel</span><span class="status">BOOKED</span></div><div class="panel-row"><span>Transfer</span><span class="status">READY</span></div></div>
-              <div class="panel"><h4>Inbox triage</h4><div class="panel-row"><span>Urgent</span><span class="status">3</span></div><div class="panel-row"><span>Follow up</span><span class="status">7</span></div><div class="panel-row"><span>Done</span><span class="status">18</span></div></div>
+              <div class="panel"><h4>Inbox triage · 80 to 100 a day</h4><div class="panel-row"><span>Urgent</span><span class="status">REPLY</span></div><div class="panel-row"><span>Follow up</span><span class="status">TRACK</span></div><div class="panel-row"><span>Done</span><span class="status">FILED</span></div></div>
               <div class="panel"><h4>Task tracker</h4><div class="panel-row"><span>Client brief</span><span class="status">DONE</span></div><div class="panel-row"><span>Meeting notes</span><span class="status">NEXT</span></div><div class="panel-row"><span>Report</span><span class="status">REVIEW</span></div></div>
               <div class="panel"><h4>SOP library</h4><div class="panel-row"><span>Travel</span><span class="status">READY</span></div><div class="panel-row"><span>Weekly report</span><span class="status">READY</span></div><div class="panel-row"><span>Follow ups</span><span class="status">READY</span></div></div>
             </div>
@@ -397,26 +413,26 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
           <h3 class="study-title">From lead to client</h3>
           <p class="study-copy">Vibeora gave me a practical education in what happens after someone says they are interested. The work was about keeping the pipeline moving, following up consistently, and turning conversations into clients.</p>
           <ul class="study-list">
-            <li>Prospecting and lead generation.</li>
+            <li>Lead capture and organization.</li>
             <li>Qualification and follow up.</li>
             <li>HubSpot CRM and Marketing Hub workflows.</li>
-            <li>GoHighLevel CRM alongside HubSpot.</li>
+            <li>GoHighLevel pipeline setup (limited experience).</li>
             <li>Client communication and sales monitoring.</li>
           </ul>
-          <div class="study-stats"><div class="study-stat"><strong>0 → 50</strong><span>Clients</span></div><div class="study-stat"><strong>15×</strong><span>Sales rate growth</span></div><div class="study-stat"><strong>2</strong><span>CRM systems</span></div></div>
+          <div class="study-stats"><div class="study-stat"><strong>0 → 50</strong><span>Clients</span></div><div class="study-stat"><strong>9 months</strong><span>To reach 50</span></div><div class="study-stat"><strong>Automated</strong><span>Lead follow up</span></div></div>
         </div>
         <div class="mock-window">
           <div class="mock-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="mock-title">CRM PIPELINE · PORTFOLIO DEMONSTRATION</span></div>
           <div class="mock-body">
-            <div class="mock-label">Sales pipeline</div>
+            <div class="mock-label">Sales pipeline · illustrative stages</div>
             <div class="pipeline">
-              <div class="stage"><h4>LEADS</h4><div class="stage-count">120</div><div class="lead">Salon prospect</div><div class="lead">Spa prospect</div></div>
-              <div class="stage"><h4>CONTACTED</h4><div class="stage-count">85</div><div class="lead">Follow up</div><div class="lead">Intro sent</div></div>
-              <div class="stage"><h4>QUALIFIED</h4><div class="stage-count">60</div><div class="lead">Needs confirmed</div><div class="lead">Budget fit</div></div>
-              <div class="stage"><h4>FOLLOW UP</h4><div class="stage-count">54</div><div class="lead">Proposal sent</div><div class="lead">Decision pending</div></div>
-              <div class="stage"><h4>WON</h4><div class="stage-count">50</div><div class="lead">Client onboarded</div><div class="lead">Relationship active</div></div>
+              <div class="stage"><h4>LEADS</h4><div class="lead">New lead</div><div class="lead">Referral lead</div></div>
+              <div class="stage"><h4>CONTACTED</h4><div class="lead">Follow up</div><div class="lead">Intro sent</div></div>
+              <div class="stage"><h4>QUALIFIED</h4><div class="lead">Needs confirmed</div><div class="lead">Budget fit</div></div>
+              <div class="stage"><h4>FOLLOW UP</h4><div class="lead">Proposal sent</div><div class="lead">Decision pending</div></div>
+              <div class="stage"><h4>WON</h4><div class="lead">Client onboarded</div><div class="lead">Relationship active</div></div>
             </div>
-            <div class="funnel"><div class="funnel-row"><span>Lead generation</span><strong>120</strong></div><div class="funnel-row"><span>Contacted</span><strong>85</strong></div><div class="funnel-row"><span>Qualified</span><strong>60</strong></div><div class="funnel-row"><span>Follow up</span><strong>54</strong></div><div class="funnel-row"><span>Clients</span><strong>50</strong></div></div>
+            <div class="workflow" style="margin-top:14px"><span>Outcome</span><b>→</b><span>Zero to approximately 50 clients in nine months</span></div>
           </div>
         </div>
       </div>
@@ -429,27 +445,17 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
           <h3 class="study-title">High volume support with a focus on resolution</h3>
           <p class="study-copy">Working at scale taught me how important it is to listen quickly, identify the actual issue, resolve what can be resolved, and document the interaction properly for the next person.</p>
           <ul class="study-list">
-            <li>Worked through an average of 150 customer calls per day across billing, network, account and activation requests.</li>
-            <li>Covered inquiries, complaints, account, payment, and technical support.</li>
-            <li>Maintained accurate CRM records.</li>
-            <li>Escalated complex cases through to resolution.</li>
+            <li>Handled approximately 150 calls a day at Airtel Kenya.</li>
+            <li>Covered complaints, account activation and order processing.</li>
+            <li>Ran regular account checks to keep customer contact records current.</li>
+            <li>Resolved complaints diplomatically, offering compensation to retain customers where appropriate.</li>
           </ul>
-          <div class="study-stats"><div class="study-stat"><strong>150/day</strong><span>Interactions</span></div><div class="study-stat"><strong>~92%</strong><span>CSAT</span></div><div class="study-stat"><strong>~90%</strong><span>FCR</span></div></div>
+          <div class="study-stats"><div class="study-stat"><strong>150/day</strong><span>Interactions</span></div><div class="study-stat"><strong>~92%</strong><span>CSAT</span></div><div class="study-stat"><strong>3+ years</strong><span>At Airtel</span></div></div>
         </div>
         <div class="mock-window">
           <div class="mock-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="mock-title">CUSTOMER OPERATIONS · PORTFOLIO DEMONSTRATION</span></div>
           <div class="mock-body">
-            <div class="service-dashboard">
-              <div>
-                <div class="big-metric"><strong>150</strong><span>Daily interactions</span></div>
-                <div class="bars" style="margin-top:9px"><i class="bar" style="height:48%"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i></div>
-              </div>
-              <div>
-                <div class="big-metric"><strong>~92%</strong><span>Customer satisfaction</span></div>
-                <div class="big-metric" style="margin-top:9px"><strong>~90%</strong><span>First contact resolution</span></div>
-              </div>
-            </div>
-            <div class="workflow"><span>Identify issue</span><b>→</b><span>Resolve</span><b>→</b><span>Document</span><b>→</b><span>Escalate if needed</span></div>
+            <div class="service-dashboard"><div class="big-metric"><strong>~150</strong><span>Calls handled a day</span></div><div class="big-metric"><strong>~92%</strong><span>Customer satisfaction</span><div class="meter"><i style="width:92%"></i></div></div></div><div class="hcap" style="margin-top:9px">Figures from my own work records at Airtel Kenya.</div><div class="workflow"><span>Identify issue</span><b>→</b><span>Resolve</span><b>→</b><span>Document</span><b>→</b><span>Escalate if needed</span></div>
           </div>
         </div>
       </div>
@@ -462,25 +468,18 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
           <h3 class="study-title">Financial analysis that supports decisions</h3>
           <p class="study-copy">My finance work sits at the intersection of numbers and decisions. I have worked with financial information, credit assessment, portfolio monitoring, and process improvement rather than treating analysis as an exercise that ends in a spreadsheet.</p>
           <ul class="study-list">
-            <li>Compared borrower income, expenses, debt and financial records to build a clearer picture of creditworthiness.</li>
-            <li>Organised the financial and risk information senior staff used when reviewing loan facilities and credit decisions.</li>
-            <li>Monitored portfolio performance and early warning indicators.</li>
-            <li>Passed credit decision updates to recovery and operations teams so monitoring and collection activity had the right context.</li>
-            <li>Applied risk checklists and early warning checks to catch gaps before they became larger portfolio issues.</li>
+            <li>Reviewed client financial and credit documentation to assess repayment capacity, under senior analyst guidance.</li>
+            <li>Applied risk control checklists to catch gaps early.</li>
+            <li>Streamlined financial review steps, contributing to faster turnaround on routine analysis and approvals.</li>
+            <li>Monitored portfolio activity and flagged early signs of default for senior review.</li>
+            <li>Liaised with recovery and operations teams to relay credit decisions and support collections tracking.</li>
           </ul>
-          <div class="study-stats"><div class="study-stat"><strong>15%</strong><span>NPL reduction</span></div><div class="study-stat"><strong>30%</strong><span>Faster reviews</span></div><div class="study-stat"><strong>Finance</strong><span>Core discipline</span></div></div>
+          <div class="study-stats"><div class="study-stat"><strong>18 months</strong><span>Credit analyst role</span></div><div class="study-stat"><strong>Early</strong><span>Default flagging</span></div><div class="study-stat"><strong>Finance</strong><span>Core discipline</span></div></div>
         </div>
         <div class="mock-window">
-          <div class="mock-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="mock-title">CREDIT ANALYSIS · PORTFOLIO DEMONSTRATION</span></div>
+          <div class="mock-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="mock-title">CREDIT REVIEW WORKFLOW · PORTFOLIO DEMONSTRATION</span></div>
           <div class="mock-body">
-            <div class="finance-dashboard">
-              <div class="finance-box"><div class="top"><span>Revenue</span><span>Trend</span></div><strong>+12.4%</strong><div class="trend"></div></div>
-              <div class="finance-box"><div class="top"><span>Cash flow</span><span>Status</span></div><strong>Healthy</strong><div class="trend"></div></div>
-              <div class="finance-box"><div class="top"><span>Debt service</span><span>Coverage</span></div><strong>2.8×</strong><div class="trend"></div></div>
-              <div class="finance-box"><div class="top"><span>Portfolio risk</span><span>Watch</span></div><strong>Moderate</strong><div class="trend"></div></div>
-              <div class="credit-score"><div><span>Credit review summary</span><strong>Structured decision</strong></div><span>Financials · Risk · Repayment capacity · Monitoring</span></div>
-            </div>
-            <div class="workflow"><span>Financial review</span><b>→</b><span>Credit assessment</span><b>→</b><span>Risk controls</span><b>→</b><span>Monitor</span></div>
+            <div class="credit-table" style="background:#fff;border:1px solid #D8E0DB"><div class="credit-row head"><span>Review step</span><span>Done by</span><span>Outcome</span></div><div class="credit-row"><span>Client documentation</span><span>Analyst</span><b>Reviewed</b></div><div class="credit-row"><span>Risk control checklist</span><span>Analyst</span><b>Applied</b></div><div class="credit-row"><span>Repayment capacity</span><span>Analyst</span><b>Assessed</b></div><div class="credit-row"><span>Portfolio activity</span><span>Analyst</span><b>Monitored</b></div><div class="credit-row"><span>Early default signs</span><span>Analyst</span><b>Flagged</b></div><div class="credit-row"><span>Credit decision</span><span>Senior analyst</span><b>Final approval</b></div></div><div class="workflow"><span>Financial review</span><b>→</b><span>Credit assessment</span><b>→</b><span>Risk controls</span><b>→</b><span>Monitor</span></div>
           </div>
         </div>
       </div>
@@ -509,11 +508,7 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
               <div class="kpi"><small>Activity</small><strong>DAU</strong></div>
               <div class="kpi"><small>Player loss</small><strong>Churn</strong></div>
               <div class="kpi"><small>Purchases</small><strong>CVR</strong></div>
-              <div class="chart">
-                <div class="mock-label">Example retention trend</div>
-                <div class="chart-line"><i style="--h:92%"></i><i style="--h:80%"></i><i style="--h:73%"></i><i style="--h:61%"></i><i style="--h:55%"></i><i style="--h:48%"></i><i style="--h:42%"></i></div>
-                <div class="chart-caption">Business question → KPI → finding → recommendation</div>
-              </div>
+              <div class="chart"><div class="mock-label">Business question → KPI → how it is measured</div><div class="kpimap"><div class="kpirow head"><span>Question</span><span>KPI</span><span>Measured as</span></div><div class="kpirow"><span>Are new players coming back?</span><b>Retention rate</b><span>Players active on day N ÷ players who started</span></div><div class="kpirow"><span>How big is the daily community?</span><b>DAU</b><span>Unique players active in one day</span></div><div class="kpirow"><span>Are we losing players?</span><b>Churn rate</b><span>Players lost in a period ÷ players at the start</span></div><div class="kpirow"><span>Are players buying?</span><b>Conversion rate</b><span>Players who purchase ÷ all players</span></div></div><div class="chart-caption">Business question → KPI → finding → recommendation</div></div>
             </div>
           </div>
         </div>
@@ -538,22 +533,24 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
 <section class="alt" id="experience">
   <div class="wrap">
     <div class="section-head"><span class="num">05</span><h2>Experience</h2></div>
-    <div class="exp-entry"><div class="when">Ongoing</div><div><h3>Executive Assistant, Finance</h3><div class="role-org">Flamingo Horticulture Ltd · Flamingo Group International</div>
+    <div class="exp-entry"><div class="when">Oct 2022 to Present</div><div><h3>Executive Assistant, Finance</h3><div class="role-org">Flamingo Horticulture Ltd · Flamingo Group International</div>
 <div class="company-context"><strong>Company context</strong><span>Flamingo Horticulture is a vertically integrated horticulture business involved in growing, processing, marketing, and distributing flowers and premium vegetables. I supported work in a finance environment where reporting, planning, coordination, and timely information mattered.</span></div>
-<ul><li>Booked executive travel, built meeting agendas, captured actions and chased open items so decisions moved from the meeting room into completed tasks.</li><li>Collected financial data from multiple departments, calculated and checked figures in Excel and Google Sheets, and turned the inputs into management reports, budgets, project reviews and planning material.</li><li>Used QuickBooks to record transactions, support bank and supplier reconciliations, process invoices and keep payment tracking current.</li><li>Worked with a seven person finance team to build income statements, balance sheets, cash flow statements, budget reports, management reports, financial performance reports, and revenue and expenditure statements for Executive Board presentation.</li><li>Used Trullion, Booke AI, MindBridge, Datarails, Numeric, Pigment and Cube in AI assisted finance workflows, then checked the outputs against source data before they entered the final reporting pack.</li><li>Compared revenue and expenditure figures closely enough to identify spending that was not adding clear business value, including an unusually high employee holiday stipend, giving the team evidence to question and reduce unnecessary expenditure.</li><li>Helped draft the final reporting pack with the team, then presented the work to the panel of three interns and four experienced finance auditors before it was approved for release to the employee intranet.</li></ul>
-<div class="pills"><span class="pill">Executive Support</span><span class="pill">Financial Reporting</span><span class="pill">QuickBooks</span><span class="pill">Excel</span><span class="pill">Google Sheets</span><span class="pill">PowerPoint</span><span class="pill">Word</span><span class="pill">Teams</span><span class="pill">Trullion</span><span class="pill">Booke AI</span><span class="pill">MindBridge</span><span class="pill">Datarails</span><span class="pill">Numeric</span><span class="pill">Pigment</span><span class="pill">Cube</span></div>
-<div class="role-proof"><div class="role-proof-head"><strong>Finance reporting pack · working view</strong><span>Portfolio demonstration</span></div><div class="finance-pack"><div class="report-card"><h4>Reporting pack</h4><div class="report-lines"><div class="report-line"><span>Income statement</span><b>Reviewed</b></div><div class="report-line"><span>Balance sheet</span><b>Reviewed</b></div><div class="report-line"><span>Cash flow</span><b>Reviewed</b></div><div class="report-line"><span>Budget report</span><b>Updated</b></div><div class="report-line"><span>Revenue &amp; expenditure</span><b>Checked</b></div><div class="report-line"><span>Management report</span><b>Drafted</b></div></div><div class="report-foot"><span class="report-chip">Excel</span><span class="report-chip">PowerPoint</span><span class="report-chip">7 person team</span></div></div><div class="board-card"><h4>Executive Board review</h4><div class="mini-bars"><i style="--h:42%"></i><i style="--h:66%"></i><i style="--h:55%"></i><i style="--h:78%"></i><i style="--h:63%"></i><i style="--h:86%"></i></div><div class="approval"><b>APPROVED</b>Report presented to the panel and approved for release to the employee intranet.</div></div></div></div></div></div>
-    <div class="exp-entry"><div class="when">Ongoing</div><div><h3>Managing Director</h3><div class="role-org">Vibeora Beauty and Wellness Co.</div><ul><li>Grew monthly sales from a $0 starting point to approximately $500+ by turning enquiries into purchases and building a customer base that grew largely through referrals.</li><li>Moved each lead through qualification, product recommendation, payment, delivery and post sale follow up, using the follow up stage to keep customers engaged after the transaction.</li><li>Brought in leads through social media, calls, WhatsApp, email, referrals and walk in enquiries, then responded while interest was still fresh.</li><li>Used HubSpot and GoHighLevel to track leads, conversations and follow ups, while ClickUp kept supplier orders, stock, deliveries and other operating tasks visible.</li><li>Placed supplier orders, restocked against demand, coordinated deliveries, resolved returns and complaints, and tested products before launch.</li><li>Used competitor prices and product costs when setting prices, including a 5% discount on new sales that helped lower the barrier for first time customers.</li><li>Followed up after sales and tracked which products and campaigns performed best, using customer feedback, service quality and product quality to encourage repeat purchases and referrals.</li></ul><div class="pills"><span class="pill">HubSpot</span><span class="pill">GoHighLevel</span><span class="pill">ClickUp</span><span class="pill">Sales Operations</span><span class="pill">Customer Retention</span></div></div></div>
-    <div class="exp-entry"><div class="when">Part time</div><div><h3>Business Development Representative</h3><div class="role-org">Waji Limited · Independent Partner</div><ul><li>Supported business development activity as an independent partner alongside core roles.</li></ul></div></div>
-    <div class="exp-entry"><div class="when">18 months</div><div><h3>Virtual Assistant</h3><div class="role-org">UK based Executive · Remote</div><ul><li>Triaged the executive calendar and inbox each day, surfaced time sensitive priorities, and tracked follow ups so important items did not disappear between meetings.</li><li>Coordinated international trips from booking through itinerary checks, accommodation, ground transport and last minute changes, keeping the executive's schedule workable across locations.</li><li>Built meeting agendas and materials, captured notes and action points, then followed up with the relevant people until the agreed next steps were closed.</li><li>Researched suppliers and business topics, turned the findings into reports and briefs, and tracked expenses so the executive had the information needed for decisions.</li><li>Turned recurring work into SOPs and reusable templates, reducing repeated back and forth and contributing to 10+ hours of weekly time saved.</li></ul><div class="pills"><span class="pill">Google Workspace</span><span class="pill">Microsoft 365</span><span class="pill">Outlook</span><span class="pill">Calendly</span><span class="pill">Zoom</span><span class="pill">Slack</span><span class="pill">Notion</span><span class="pill">Trello</span><span class="pill">Asana</span><span class="pill">Canva</span><span class="pill">ChatGPT</span><span class="pill">Zapier</span></div></div></div>
-    <div class="exp-entry"><div class="when">2023 to 2025</div><div><h3>Customer Service Representative</h3><div class="role-org">Airtel Kenya</div><ul><li>Resolved around 150 customer calls a day across billing questions, network complaints, account changes, reactivations and new line activations while maintaining the team’s best call rate and solve rate.</li><li>Used Zendesk, Zoho and Freshdesk to verify customers, check account history and payment status, record the issue, document the action taken and keep the next agent from having to start the case again.</li><li>Used Gong and Balto during call centre work to review and guide conversations, helping balance speed with clear, accurate customer communication.</li><li>Escalated technical cases that needed another team and stayed clear on the expected next step, contributing to performance around 92% CSAT and 90% first contact resolution.</li></ul><div class="pills"><span class="pill">Zendesk</span><span class="pill">Zoho</span><span class="pill">Freshdesk</span><span class="pill">Gong</span><span class="pill">Balto</span><span class="pill">Customer Resolution</span></div></div></div>
-    <div class="exp-entry"><div class="when">2023 to 2025</div><div><h3>Customer Service Specialist</h3><div class="role-org">Mozzart</div><ul><li>Worked through a high volume of account, payment and technical enquiries, moving each case from customer verification to diagnosis and resolution without losing the detail needed for follow up.</li><li>Checked the account, identified the issue, resolved what could be fixed on the spot and escalated specialist cases with the relevant context already documented.</li><li>Recorded the outcome and watched recurring complaints closely, using patterns in customer issues to spot where a wider process or product problem might be developing.</li></ul><div class="pills"><span class="pill">Customer Support</span><span class="pill">CRM Documentation</span><span class="pill">Issue Resolution</span><span class="pill">Escalation</span></div></div></div>
-    <div class="exp-entry"><div class="when">4 months</div><div><h3>Credit Analyst Intern</h3><div class="role-org">Coinage Capital</div>
-<ul><li>Logged and screened incoming applications, then organised the supporting documents so the senior credit analyst could begin the detailed review with a cleaner file.</li><li>Reviewed bank statements, payslips, M Pesa statements, Creditinfo reports supplied by the senior analyst, existing loans, income and expenses, collateral details, business financials and repayment history.</li><li>Calculated DTI and supported DSCR and LTV checks, then used basic profitability and liquidity measures to test repayment capacity before the file reached senior review.</li><li>Ran the risk checklist against each file, picked up gaps and inconsistencies, and escalated them to the senior analyst rather than making the final credit call.</li><li>Flagged early warning signs such as declining deposits, existing defaults, high debt exposure, mismatched documents and late or partial repayments during portfolio monitoring.</li><li>Worked with the senior credit analyst, credit manager, relationship managers, recovery and operations teams as applications moved through assessment, approval and monitoring.</li><li>Pre organised documents and completed the initial checklist before senior review, helping routine files move through the queue with less back and forth.</li></ul>
-<div class="pills"><span class="pill">Excel</span><span class="pill">Google Sheets</span><span class="pill">Creditinfo</span><span class="pill">Internal Credit System</span><span class="pill">Email</span><span class="pill">Teams</span><span class="pill">Slack</span><span class="pill">WhatsApp</span><span class="pill">DTI</span><span class="pill">DSCR</span><span class="pill">LTV</span></div>
+<ul><li>Prepare management reports that translate complex financial information into actionable insights for decision making.</li><li>Conduct financial analysis and support budgeting processes for finance leadership.</li><li>Evaluate projects and track costs to support strategic planning initiatives for growth.</li><li>Provide executive coordination alongside core financial analysis responsibilities.</li></ul>
+<div class="pills"><span class="pill">Executive Support</span><span class="pill">Financial Analysis</span><span class="pill">Management Reporting</span><span class="pill">Budgeting</span><span class="pill">Cost Tracking</span><span class="pill">Google Workspace</span><span class="pill">Microsoft 365</span></div>
+<div class="role-proof"><div class="role-proof-head"><strong>Finance reporting pack · working view</strong><span>Portfolio demonstration</span></div><div class="finance-pack"><div class="report-card"><h4>Reporting pack</h4><div class="report-lines"><div class="report-line"><span>Management report</span><b>Prepared</b></div><div class="report-line"><span>Budget variance</span><b>Reviewed</b></div><div class="report-line"><span>Cost centre tracking</span><b>Updated</b></div><div class="report-line"><span>Project evaluation</span><b>Assessed</b></div></div><div class="report-foot"><span class="report-chip">Google Workspace</span><span class="report-chip">Microsoft Office</span></div></div><div class="board-card"><h4>From data to decision</h4><div class="steps"><div class="step"><b>1</b><span>Track costs and project spend</span></div><div class="step"><b>2</b><span>Analyse budget variances</span></div><div class="step"><b>3</b><span>Prepare the management report</span></div><div class="step"><b>4</b><span>Leadership uses it to decide</span></div></div><div class="approval"><b>PURPOSE</b>Management reports that turn financial data into clear insight for finance leadership.</div></div></div></div></div></div>
+    <div class="exp-entry"><div class="when">Jan 2026 to Present</div><div><h3>Founder and Managing Director</h3><div class="role-org">Vibeora Beauty and Wellness Co.</div><ul><li>Grew the client base from zero to approximately 50 clients within nine months through discounted client pricing and referrals from served clients.</li><li>Create and publish social media content almost daily using Canva, CapCut, Meta Business Suite, Later and Buffer to drive brand awareness, retention and revenue growth.</li><li>Built a lead management automation across HubSpot, Gmail, WhatsApp, Google Sheets and Calendly that captures every new lead, follows up, qualifies, updates pipeline status and sets reminders.</li><li>Use HubSpot CRM and customer data to strengthen client relationships and improve business performance.</li><li>Deployed a Chatly AI agent to handle customer and lead responses, qualification, follow ups and templates.</li><li>Manage budgeting, cash flow forecasting, pricing strategy and supplier negotiations.</li></ul><div class="pills"><span class="pill">HubSpot</span><span class="pill">GoHighLevel (limited)</span><span class="pill">Canva</span><span class="pill">CapCut</span><span class="pill">Meta Business Suite</span><span class="pill">Later</span><span class="pill">Buffer</span><span class="pill">Sales Operations</span></div></div></div>
+    <div class="exp-entry"><div class="when">Oct 2025 to Oct 2026</div><div><h3>Business Development Representative</h3><div class="role-org">Waji Limited · Independent Partner</div><ul><li>Made approximately 100 or more outbound cold calls a week to generate new business leads.</li><li>Negotiated with prospects and worked deals through to close, with 13 deals signed from August 2026.</li></ul></div></div>
+    <div class="exp-entry"><div class="when">Jan 2020 to Dec 2025</div><div><h3>Virtual Assistant</h3><div class="role-org">UK based Executive · Remote</div><ul><li>Managed an executive inbox of approximately 80 to 100 emails a day, including prioritization, drafting responses and follow ups.</li><li>Coordinated calendars across time zones and scheduled meetings efficiently.</li><li>Coordinated 20 plus international trips, including itinerary planning and logistics.</li><li>Built SOPs and templates that saved approximately 10 or more hours a week.</li><li>Tracked tasks, projects and deadlines in Asana, Trello and Notion, supported client onboarding and kept CRM records accurate.</li><li>Prepared reports, presentations and operational documents using Google Workspace and Microsoft Office.</li><li>Maintained close to 100 percent on time delivery while keeping confidentiality and discretion.</li></ul><div class="pills"><span class="pill">Google Workspace</span><span class="pill">Microsoft 365</span><span class="pill">Calendly</span><span class="pill">Zoom</span><span class="pill">Slack</span><span class="pill">Notion</span><span class="pill">Trello</span><span class="pill">Asana</span><span class="pill">Canva</span><span class="pill">Zapier</span></div></div></div>
+    <div class="exp-entry"><div class="when">Jan 2021 to May 2024</div><div><h3>Customer Service Representative</h3><div class="role-org">Airtel Kenya</div><ul><li>Handled approximately 150 inbound calls a day at approximately 92 percent customer satisfaction.</li><li>Resolved complaints diplomatically, offering compensation to retain customers where appropriate.</li><li>Assisted clients with new account activation and order processing, and ran regular account checks to keep contact records current.</li><li>Trained peers to improve team wide customer satisfaction and consistently met call speed and accuracy targets.</li></ul><div class="pills"><span class="pill">Customer Resolution</span><span class="pill">Account Activation</span><span class="pill">Peer Training</span></div></div></div>
+    <div class="exp-entry"><div class="when">Jun 2024 to Dec 2025</div><div><h3>Credit Analyst</h3><div class="role-org">Coinage Capital</div>
+<ul><li>Reviewed client documentation and applied risk control checklists under senior analyst guidance.</li><li>Assisted in streamlining financial review steps, contributing to faster turnaround on routine analysis and approval tasks.</li><li>Helped gather and organize financial and credit data to support evaluations of client repayment capacity.</li><li>Monitored portfolio activity and flagged early signs of potential default for senior credit staff.</li><li>Liaised with recovery and operations teams to relay credit decision updates and support collections tracking.</li></ul>
+<div class="pills"><span class="pill">Credit Assessment</span><span class="pill">Risk Control</span><span class="pill">Portfolio Monitoring</span><span class="pill">Collections Tracking</span></div>
 <div class="credit-context"><strong>Credit review context</strong><span>My role was support level. I organized the information, performed analysis and risk checks, and escalated concerns to senior staff who handled final approvals and credit decisions.</span></div>
 </div></div>
-    <div class="exp-entry"><div class="when">Since Oct 2025</div><div><h3>Human Verifier &amp; Data Label Expert</h3><div class="role-org">Atlas Capture · Labelbox · Remote</div><ul><li>Labeled action segments and tracked objects in egocentric footage, checking annotations for consistency and accuracy before submission.</li></ul></div></div>
+    <div class="exp-entry"><div class="when">Apr 2024 to Mar 2025</div><div><h3>Remote Data Entry Specialist</h3><div class="role-org">Metropol Credit Bureau</div><ul><li>Maintained accurate digital records of financial transactions.</li><li>Ensured timely filing of client documentation for audits and compliance.</li><li>Improved data retrieval efficiency by restructuring the records system.</li></ul></div></div>
+    <div class="exp-entry"><div class="when">May 2022 to Dec 2022</div><div><h3>Finance Intern</h3><div class="role-org">Kenya Urban Roads Authority</div><ul><li>Processed and matched payment documents, recorded fundamental accounting entries and prepared payment vouchers.</li><li>Established a systematic archiving system that improved document retrieval and traceability for financial reports.</li><li>Tracked and managed the organizational fixed asset register by leading physical inventory counts.</li><li>Managed staff PAYE returns and streamlined audit support by rapidly retrieving financial documents.</li></ul><div class="pills"><span class="pill">QuickBooks (working knowledge)</span><span class="pill">Audit Support</span><span class="pill">Fixed Assets</span></div></div></div>
+    <div class="exp-entry"><div class="when">Sep 2024 to Dec 2024</div><div><h3>Student Researcher</h3><div class="role-org">Kabarak University</div><ul><li>Researched fiscal policies and their impact on poverty.</li><li>Presented findings in group discussions with faculty and students.</li></ul></div></div>
+    <div class="exp-entry"><div class="when">Sep 2026 to Present</div><div><h3>Founder</h3><div class="role-org">RemoteRise · Blogger</div><ul><li>Founded and run a blog targeting remote job seekers in Africa, with over 20 posts published.</li></ul></div></div>
   </div>
 </section>
 
@@ -600,7 +597,7 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
         <div class="app-body">
           <div class="app-sidebar"><b>My Tasks</b><span>Today</span><span>Upcoming</span><span>Completed</span><span>Projects</span></div>
           <div class="app-main">
-            <div class="app-heading"><div><small>MONDAY · 31 AUG</small><h3>Executive support tasks</h3></div><button>+ Add task</button></div>
+            <div class="app-heading"><div><small>MONDAY · 9 NOV</small><h3>Executive support tasks</h3></div><button>+ Add task</button></div>
             <div class="task-row done"><i>✓</i><div><strong>Confirm client meeting</strong><span>Calendar coordination · 09:00</span></div><em>Complete</em></div>
             <div class="task-row"><i></i><div><strong>Prepare weekly finance brief</strong><span>Attach figures · Due 14:00</span></div><em class="priority">High</em></div>
             <div class="task-row"><i></i><div><strong>Follow up on travel confirmation</strong><span>Flight + hotel · Due 15:30</span></div><em>Today</em></div>
@@ -616,7 +613,7 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
           <div class="board-head"><div><small>WORKFLOW BOARD</small><h3>Weekly operations</h3></div><span class="board-badge">4 lists</span></div>
           <div class="trello-board">
             <div class="trello-list"><h4>To do <span>3</span></h4><div class="trello-card"><b>Book Nairobi transfer</b><small>Travel · Clement</small></div><div class="trello-card"><b>Update SOP</b><small>Operations · This week</small></div><div class="trello-card"><b>Review inbox</b><small>Executive · Today</small></div></div>
-            <div class="trello-list"><h4>Doing <span>2</span></h4><div class="trello-card marked"><b>Finance brief</b><small>In progress · 70%</small><div class="mini-progress"><i style="width:70%"></i></div></div><div class="trello-card"><b>Meeting preparation</b><small>Agenda + notes</small></div></div>
+            <div class="trello-list"><h4>Doing <span>2</span></h4><div class="trello-card marked"><b>Finance brief</b><small>In progress</small></div><div class="trello-card"><b>Meeting preparation</b><small>Agenda + notes</small></div></div>
             <div class="trello-list"><h4>Waiting <span>1</span></h4><div class="trello-card"><b>Client confirmation</b><small>Waiting for reply</small></div></div>
             <div class="trello-list"><h4>Done <span>3</span></h4><div class="trello-card"><b>Calendar cleanup</b><small>Completed today</small></div><div class="trello-card"><b>Travel brief</b><small>Completed</small></div><div class="trello-card"><b>Weekly follow ups</b><small>Completed</small></div></div>
           </div>
@@ -630,10 +627,10 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
           <div class="clickup-head"><div><small>LIST VIEW · 6 TASKS</small><h3>Operations command list</h3></div><div class="view-switch">List&nbsp;&nbsp; Board&nbsp;&nbsp; Calendar</div></div>
           <div class="clickup-table">
             <div class="cu-row cu-head"><span>Task</span><span>Assignee</span><span>Priority</span><span>Status</span><span>Due</span></div>
-            <div class="cu-row"><span>Prepare client brief</span><span>CO</span><span class="cu-high">Urgent</span><span class="cu-done">Done</span><span>31 Aug</span></div>
-            <div class="cu-row"><span>Reconcile action list</span><span>CO</span><span>High</span><span class="cu-progress">In progress</span><span>31 Aug</span></div>
-            <div class="cu-row"><span>Update travel plan</span><span>CO</span><span>Normal</span><span class="cu-progress">In progress</span><span>01 Sep</span></div>
-            <div class="cu-row"><span>Send follow up email</span><span>CO</span><span>Normal</span><span class="cu-wait">Waiting</span><span>01 Sep</span></div>
+            <div class="cu-row"><span>Prepare client brief</span><span>CO</span><span class="cu-high">Urgent</span><span class="cu-done">Done</span><span>9 Nov</span></div>
+            <div class="cu-row"><span>Reconcile action list</span><span>CO</span><span>High</span><span class="cu-progress">In progress</span><span>9 Nov</span></div>
+            <div class="cu-row"><span>Update travel plan</span><span>CO</span><span>Normal</span><span class="cu-progress">In progress</span><span>10 Nov</span></div>
+            <div class="cu-row"><span>Send follow up email</span><span>CO</span><span>Normal</span><span class="cu-wait">Waiting</span><span>10 Nov</span></div>
           </div>
         </div>
         <div class="tool-caption"><strong>Example task management</strong> Priority, ownership, status, and deadlines in one view</div>
@@ -647,11 +644,12 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
     <div class="section-head"><span class="num">09A</span><h2>Tools by role</h2></div>
     <p class="section-intro">I do not use the same software for every job. The tool depends on the work that needs to get done.</p>
     <div class="skills-grid">
-      <div class="skill-card"><div class="skill-k">Finance</div><h3>Reporting and planning</h3><p>Excel, Google Sheets, PowerPoint, Word, Teams, QuickBooks, Trullion, Booke AI, MindBridge, Datarails, Numeric, Pigment, and Cube.</p></div>
-      <div class="skill-card"><div class="skill-k">Credit</div><h3>Review and monitoring</h3><p>Excel, Google Sheets, an internal credit system, Creditinfo reports, and communication tools used with senior credit, recovery, and operations teams.</p></div>
-      <div class="skill-card"><div class="skill-k">Customer operations</div><h3>Support and call quality</h3><p>Zendesk, Zoho, Freshdesk, Gong, and Balto for customer records, case handling, call analysis, and live support guidance.</p></div>
-      <div class="skill-card"><div class="skill-k">Sales operations</div><h3>Pipeline and follow up</h3><p>HubSpot, GoHighLevel, and ClickUp for lead tracking, customer follow up, sales activity, and operational tasks.</p></div>
-      <div class="skill-card"><div class="skill-k">Executive support</div><h3>Keeping the week organized</h3><p>Google Workspace, Microsoft 365, Outlook, Calendly, Zoom, Slack, Notion, Trello, Asana, Canva, ChatGPT, and Zapier.</p></div>
+      <div class="skill-card"><div class="skill-k">Finance</div><h3>Reporting and planning</h3><p>Google Workspace and Microsoft Office for management reports, budgets and cost tracking. QuickBooks at working knowledge level from my Kenya Urban Roads Authority internship.</p></div>
+      <div class="skill-card"><div class="skill-k">Credit</div><h3>Review and monitoring</h3><p>Risk control checklists, financial and credit documentation review, and portfolio monitoring, working with senior credit, recovery, and operations teams.</p></div>
+      <div class="skill-card"><div class="skill-k">Customer operations</div><h3>Support and call quality</h3><p>Zendesk and Freshdesk for customer records, case handling, and interaction documentation.</p></div>
+      <div class="skill-card"><div class="skill-k">Sales operations</div><h3>Pipeline and follow up</h3><p>HubSpot CRM and Marketing Hub, with limited GoHighLevel, plus Gmail, WhatsApp, Google Sheets and Calendly for lead tracking, follow up and reminders.</p></div>
+      <div class="skill-card"><div class="skill-k">Executive support</div><h3>Keeping the week organized</h3><p>Google Workspace, Microsoft 365, Calendly, Zoom, Slack, Notion, Trello, Asana, ChatGPT, and Zapier.</p></div>
+      <div class="skill-card"><div class="skill-k">Social media</div><h3>Content and scheduling</h3><p>Canva and CapCut for graphics and short video, with Meta Business Suite, Later and Buffer for scheduling and publishing.</p></div>
       <div class="skill-card"><div class="skill-k">How I use tools</div><h3>The software is not the result</h3><p>I use the tool to make the work visible, then check the actual output. That means reviewing data, confirming details, and keeping a human check in the workflow.</p></div>
     </div>
   </div>
@@ -677,11 +675,11 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
       <div class="role-visual flamingo-visual">
         <div class="fv-head"><span>FLAMINGO · FINANCE SUPPORT</span><b>WORKFLOW VIEW</b></div>
         <div class="fv-grid">
-          <div class="fv-card"><small>Today</small><strong>Finance priorities</strong><span>3 items need follow up</span></div>
+          <div class="fv-card"><small>Today</small><strong>Finance priorities</strong><span>Follow ups tracked</span></div>
           <div class="fv-card"><small>Documents</small><strong>Reporting pack</strong><span>Ready for review</span></div>
           <div class="fv-card wide"><small>Information flow</small><div class="fv-flow"><i>Request</i><b>→</b><i>Review</i><b>→</b><i>Coordinate</i><b>→</b><i>Follow up</i></div></div>
-          <div class="fv-card"><small>Schedule</small><strong>09:30</strong><span>Finance review</span></div>
-          <div class="fv-card"><small>Action list</small><strong>4 / 6</strong><span>Items closed</span></div>
+          <div class="fv-card"><small>Schedule</small><strong>Meetings</strong><span>Finance review</span></div>
+          <div class="fv-card"><small>Action list</small><strong>Tracked</strong><span>Until closed</span></div>
         </div>
         <p class="mock-disclaimer">Portfolio demonstration. Not a company system or confidential Flamingo data.</p>
       </div>
@@ -689,7 +687,7 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
 
     <div class="role-case reverse">
       <div class="role-case-copy">
-        <div class="study-kicker">Metropol Credit Bureau · Coinage Capital · Records Clerk &amp; Credit Analyst</div>
+        <div class="study-kicker">Metropol Credit Bureau · Coinage Capital · Data Entry Specialist &amp; Credit Analyst</div>
         <h3>Turning borrower information into a clearer credit picture</h3>
         <p>Coinage Capital provides financing products including logbook loans, asset finance, LPO financing, title deed loans, buy off loans, and salaried loans. Credit work therefore depends on bringing different pieces of borrower and facility information together before a decision is made.</p>
         <p>I worked with records, financial information, credit assessment support, and portfolio monitoring. The useful part of the work was not just storing information. It was making the information easier to retrieve, review, compare, and act on.</p>
@@ -700,22 +698,9 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
         </div>
       </div>
       <div class="role-visual credit-visual">
-        <div class="credit-app-head"><span>CREDIT REVIEW · SAMPLE WORKSPACE</span><b>ILLUSTRATIVE DATA</b></div>
-        <div class="credit-summary">
-          <div><small>Applicant</small><strong>Sample Business Ltd</strong><span>SME borrower</span></div>
-          <div><small>Requested</small><strong>KES 450K</strong><span>12 month tenor</span></div>
-          <div><small>Collateral</small><strong>KES 1.2M</strong><span>Illustrative value</span></div>
-        </div>
-        <div class="credit-table">
-          <div class="credit-row head"><span>Data point</span><span>Review</span><span>Signal</span></div>
-          <div class="credit-row"><span>6 month bank statements</span><span>Reviewed</span><b>Stable</b></div>
-          <div class="credit-row"><span>Existing obligations</span><span>KES 85K</span><b>Watch</b></div>
-          <div class="credit-row"><span>Repayment history</span><span>24 months</span><b>Positive</b></div>
-          <div class="credit-row"><span>Collateral coverage</span><span>2.7×</span><b>Strong</b></div>
-          <div class="credit-row"><span>Credit information</span><span>Checked</span><b>Review</b></div>
-        </div>
-        <div class="credit-footer"><span>Financial capacity</span><strong>Assess →</strong><span>Risk →</span><strong>Monitor</strong></div>
-        <p class="mock-disclaimer">Illustrative portfolio data only. No real borrower information is shown.</p>
+        <div class="credit-app-head"><span>CREDIT REVIEW · SUPPORT ROLE</span><b>REVIEW STEPS</b></div>
+        <div class="credit-table" style="margin-top:12px"><div class="credit-row head"><span>Information reviewed</span><span>Done by</span><span>Status</span></div><div class="credit-row"><span>Financial records</span><span>Analyst</span><b>Reviewed</b></div><div class="credit-row"><span>Repayment history</span><span>Analyst</span><b>Reviewed</b></div><div class="credit-row"><span>Existing obligations</span><span>Analyst</span><b>Reviewed</b></div><div class="credit-row"><span>Collateral and terms</span><span>Analyst</span><b>Reviewed</b></div><div class="credit-row"><span>Approval decision</span><span>Senior analyst</span><b>Final say</b></div></div><div class="credit-footer"><span>Financial capacity</span><strong>Assess →</strong><span>Risk →</span><strong>Monitor</strong></div>
+        <p class="mock-disclaimer">Portfolio demonstration of the review steps. No real borrower information is shown.</p>
       </div>
     </div>
 
@@ -725,9 +710,9 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
         <h3>Growing a small business by staying close to the customer</h3>
         <p>The growth story started at zero. Instead of relying on one acquisition channel, I kept the customer journey active from first enquiry through the sale and continued the relationship after delivery.</p>
         <div class="role-points">
-          <div><strong>01</strong><span>Built a referral driven customer base through service, product quality, follow up, and competitive pricing.</span></div>
-          <div><strong>02</strong><span>Managed sales and operations together, from lead handling and CRM updates to supplier orders, stock, delivery, and returns.</span></div>
-          <div><strong>03</strong><span>Started from $0 and reached approximately $500+ in monthly sales.</span></div>
+          <div><strong>01</strong><span>Built a referral driven customer base through service, follow up, and discounted client pricing.</span></div>
+          <div><strong>02</strong><span>Managed sales and operations together, from lead handling and CRM updates to pricing, inventory coordination, and supplier negotiations.</span></div>
+          <div><strong>03</strong><span>Started with zero clients and reached approximately 50 in nine months.</span></div>
         </div>
       </div>
       <div class="role-visual">
@@ -736,7 +721,7 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
           <div class="crm-window">
             <div class="crm-head"><h4>CRM pipeline</h4><span>HubSpot · GoHighLevel</span></div>
             <div class="pipeline-mini">
-              <div class="pipe-col"><strong>NEW</strong><div class="pipe-card">Instagram enquiry<small>Today</small></div><div class="pipe-card">Referral<small>Today</small></div></div>
+              <div class="pipe-col"><strong>NEW</strong><div class="pipe-card">Social media enquiry<small>Today</small></div><div class="pipe-card">Referral<small>Today</small></div></div>
               <div class="pipe-col"><strong>QUALIFIED</strong><div class="pipe-card">Skincare need<small>Budget confirmed</small></div></div>
               <div class="pipe-col"><strong>FOLLOW UP</strong><div class="pipe-card">Product info sent<small>Reminder due</small></div></div>
               <div class="pipe-col"><strong>ORDER</strong><div class="pipe-card">Payment confirmed<small>Delivery booked</small></div></div>
@@ -745,8 +730,7 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
           </div>
           <div class="ops-window">
             <div class="ops-head"><h4>Business snapshot</h4><span>Owner view</span></div>
-            <div class="sales-snapshot"><div class="sales-box"><small>Monthly sales</small><strong>$500+</strong><span>From a $0 starting point</span></div><div class="sales-box"><small>New sale incentive</small><strong>5%</strong><span>Discount for first time customers</span></div><div class="sales-box"><small>Growth engine</small><strong>Referrals</strong><span>Driven by service and product quality</span></div></div>
-            <div class="growth-note">Follow up after the sale kept the relationship going and created more opportunities for repeat business and referrals.</div>
+            <div class="sales-snapshot"><div class="sales-box"><small>Clients</small><strong>~50</strong><span>From zero in nine months</span></div><div class="sales-box"><small>Pricing</small><strong>Discounted</strong><span>Client pricing to win first clients</span></div><div class="sales-box"><small>Growth engine</small><strong>Referrals</strong><span>From served clients</span></div><div class="sales-box"><small>Monthly sales conversion</small><div class="hrow vrow"><span>Start</span><div class="htrack"><i style="width:6.7%"></i></div><b>0.2%</b></div><div class="hrow vrow"><span>Now</span><div class="htrack"><i style="width:100%"></i></div><b>3%</b></div></div></div><div class="growth-note">Follow up after the sale kept the relationship going and created more opportunities for repeat business and referrals.</div>
           </div>
         </div>
         <p class="mock-disclaimer">Portfolio demonstration. No customer records are shown.</p>
@@ -757,43 +741,43 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
       <div class="role-case-copy">
         <div class="study-kicker">Airtel Kenya · Customer Service Representative</div>
         <h3>High volume support where every call still needs a clear answer</h3>
-        <p>At roughly 150 calls a day, speed mattered, but so did getting the issue right. The work moved between billing, network complaints, account requests, activations, and cases that needed escalation.</p>
+        <p>At roughly 150 calls a day, speed mattered, but so did getting the issue right. The work moved between customer complaints, account activations, order processing, and cases where compensation was the right way to keep a customer.</p>
         <div class="role-points">
           <div><strong>01</strong><span>Verified the customer and understood the problem before touching the account.</span></div>
-          <div><strong>02</strong><span>Used Zendesk, Zoho, Freshdesk, Gong and Balto to investigate, resolve, document and escalate customer issues.</span></div>
+          <div><strong>02</strong><span>Used CRM and support systems to investigate, resolve, document and escalate customer issues.</span></div>
           <div><strong>03</strong><span>Finished with clear notes so the next person had context instead of starting again.</span></div>
         </div>
       </div>
       <div class="role-visual">
         <div class="fv-head"><span>CUSTOMER SUPPORT · LIVE CASE</span><b>ILLUSTRATIVE VIEW</b></div>
         <div class="support-screen" style="margin-top:12px">
-          <div class="support-top"><span class="support-dot"></span><b>ACTIVE CUSTOMER CASE</b><span style="margin-left:auto">Zendesk · Zoho · Freshdesk</span></div>
+          <div class="support-top"><span class="support-dot"></span><b>ACTIVE CUSTOMER CASE</b><span style="margin-left:auto">Customer support system</span></div>
           <div class="support-body">
-            <div class="customer-card"><h4>Customer profile</h4><div class="customer-meta"><span>Verification <b>Complete</b></span><span>Issue <b>Billing discrepancy</b></span><span>Account <b>Active</b></span><span>History <b>Previous enquiry found</b></span></div><div class="call-tools"><span class="call-tool">Gong</span><span class="call-tool">Balto</span></div></div>
+            <div class="customer-card"><h4>Customer profile</h4><div class="customer-meta"><span>Verification <b>Complete</b></span><span>Issue <b>Customer complaint</b></span><span>Account <b>Active</b></span><span>History <b>Previous enquiry found</b></span></div><div class="call-tools"><span class="call-tool">CRM record</span><span class="call-tool">Escalation</span></div></div>
             <div class="call-card"><h4>Call workflow</h4><div class="call-step"><i>01</i><span>Verify customer</span><b>Done</b></div><div class="call-step"><i>02</i><span>Understand issue</span><b>Done</b></div><div class="call-step"><i>03</i><span>Check account and history</span><b>Done</b></div><div class="call-step"><i>04</i><span>Resolve or escalate</span><b>Resolved</b></div><div class="call-step"><i>05</i><span>Confirm and document</span><b>Logged</b></div></div>
           </div>
         </div>
-        <div class="proof-strip"><div class="proof-stat"><strong>150</strong><span>Calls / day</span></div><div class="proof-stat"><strong>Best</strong><span>Call rate</span></div><div class="proof-stat"><strong>Best</strong><span>Solve rate</span></div><div class="proof-stat"><strong>~92%</strong><span>CSAT</span></div></div>
-        <p class="mock-disclaimer">Portfolio demonstration. Performance figures are approximate where noted.</p>
+        <div class="proof-strip"><div class="proof-stat"><strong>150</strong><span>Calls / day</span></div><div class="proof-stat"><strong>Met</strong><span>Speed targets</span></div><div class="proof-stat"><strong>Met</strong><span>Accuracy targets</span></div><div class="proof-stat"><strong>~92%</strong><span>CSAT</span></div></div>
+        <p class="mock-disclaimer">Portfolio demonstration. Performance figures are approximate.</p>
       </div>
     </div>
 
     <div class="role-case">
       <div class="role-case-copy">
-        <div class="study-kicker">Executive Assistant Finance · 18 month remote engagement</div>
+        <div class="study-kicker">Virtual Assistant · Six year remote engagement</div>
         <h3>Making a busy executive schedule easier to operate</h3>
-        <p>The work was a mix of planning, coordination, research, reporting, communication, and finance support. The goal was simple: keep the executive prepared and make sure the details did not become the problem.</p>
+        <p>The work was a mix of planning, coordination, reporting, communication, and client onboarding support. The goal was simple: keep the executive prepared and make sure the details did not become the problem.</p>
         <div class="role-points">
-          <div><strong>01</strong><span>Coordinated international trips and the meetings, itineraries and logistics around them.</span></div>
-          <div><strong>02</strong><span>Prepared agendas, notes, follow ups, reports, expense records, and recurring SOPs.</span></div>
-          <div><strong>03</strong><span>Balanced executive support with finance work including QuickBooks, reconciliations, invoices, budgeting support, and reporting.</span></div>
+          <div><strong>01</strong><span>Coordinated 20 plus international trips and the itineraries and logistics around them.</span></div>
+          <div><strong>02</strong><span>Managed an inbox of 80 to 100 emails a day, tracked tasks and deadlines, and built SOPs and templates.</span></div>
+          <div><strong>03</strong><span>Supported client onboarding, kept CRM records accurate, and prepared reports and presentations.</span></div>
         </div>
       </div>
       <div class="role-visual">
         <div class="fv-head"><span>EXECUTIVE OPERATIONS · WEEK VIEW</span><b>WORKFLOW VIEW</b></div>
         <div class="executive-screen" style="margin-top:12px">
-          <div class="calendar-window"><div class="screen-title"><strong>Calendar</strong><span>WEEK VIEW</span></div><div class="cal-grid"><span></span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>09:00</span><span class="busy">Finance review</span><span></span><span class="busy">Client call</span><span>10:30</span><span></span><span class="busy">Board prep</span><span></span><span></span><span>13:00</span><span class="busy">Travel check</span><span></span><span>Meeting</span><span></span><span>15:00</span></div></div>
-          <div class="travel-window"><div class="screen-title"><strong>Travel itinerary</strong><span>TRIP 21</span></div><div class="trip-row"><b>Flight</b><span>NBO → LHR</span><small>Confirmed</small></div><div class="trip-row"><b>Hotel</b><span>Central London</span><small>Booked</small></div><div class="trip-row"><b>Transfer</b><span>Airport → Hotel</span><small>Booked</small></div><div class="trip-row"><b>Meeting</b><span>Client review</span><small>14:00</small></div></div>
+          <div class="calendar-window"><div class="screen-title"><strong>Calendar</strong><span>WEEK VIEW</span></div><div class="cal-grid"><span></span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>09:00</span><span class="busy">Finance review</span><span></span><span></span><span class="busy">Client call</span><span>10:30</span><span></span><span class="busy">Board prep</span><span></span><span></span><span>13:00</span><span class="busy">Travel check</span><span></span><span class="busy">Meeting</span><span></span><span>15:00</span><span></span><span></span><span></span><span class="busy">Follow ups</span></div></div>
+          <div class="travel-window"><div class="screen-title"><strong>Travel itinerary</strong><span>20+ TRIPS</span></div><div class="trip-row"><b>Flight</b><span>NBO → LHR</span><small>Confirmed</small></div><div class="trip-row"><b>Hotel</b><span>Central London</span><small>Booked</small></div><div class="trip-row"><b>Transfer</b><span>Airport → Hotel</span><small>Booked</small></div><div class="trip-row"><b>Meeting</b><span>Client review</span><small>14:00</small></div></div>
           <div class="inbox-window"><div class="screen-title"><strong>Inbox triage</strong><span>4 PRIORITIES</span></div><div class="inbox-row"><b>Urgent</b><span>Board meeting material</span><small>Reply</small></div><div class="inbox-row"><b>Follow up</b><span>Supplier confirmation</span><small>Today</small></div><div class="inbox-row"><b>Review</b><span>Expense documents</span><small>Finance</small></div></div>
           <div class="task-window"><div class="screen-title"><strong>Task tracker</strong><span>ASANA / TRELLO / CLICKUP</span></div><div class="task-mini"><b>01</b><span>Prepare briefing pack</span><small>Done</small></div><div class="task-mini"><b>02</b><span>Confirm travel change</span><small>Doing</small></div><div class="task-mini"><b>03</b><span>Send meeting notes</span><small>Due</small></div></div>
           <div class="sop-strip"><b>SOP</b><span>Request received</span><span>Check details</span><span>Schedule</span><span>Confirm</span><span>Document</span><span>Follow up</span></div>
@@ -802,45 +786,15 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
       </div>
     </div>
 
-    <div class="role-case reverse">
-      <div class="role-case-copy">
-        <div class="study-kicker">Mozzart · Customer Service Specialist</div>
-        <h3>Keeping customer operations moving at volume</h3>
-        <p>The role involved a steady flow of customer issues across account, payment, and technical support. The strongest habit carried over from customer operations was documenting what happened so the next step was clear.</p>
-        <div class="role-points">
-          <div><strong>01</strong><span>Worked through customer issues using a structured resolution and escalation process.</span></div>
-          <div><strong>02</strong><span>Kept customer records accurate and usable for follow up.</span></div>
-          <div><strong>03</strong><span>Balanced response speed with accuracy in a high volume queue.</span></div>
-        </div>
-      </div>
-      <div class="role-visual">
-        <div class="fv-head"><span>MOZZART · SUPPORT OPERATIONS</span><b>ILLUSTRATIVE VIEW</b></div>
-        <div class="mozzart-screen" style="margin-top:12px"><div class="moz-kpi"><span>Daily customer queue</span><strong>High volume</strong><div class="moz-bars"><div class="moz-bar"><span>Account</span><i style="width:86%"></i><b>86</b></div><div class="moz-bar"><span>Payments</span><i style="width:72%"></i><b>72</b></div><div class="moz-bar"><span>Technical</span><i style="width:58%"></i><b>58</b></div><div class="moz-bar"><span>General</span><i style="width:43%"></i><b>43</b></div></div></div><div class="moz-tickets"><div class="screen-title"><h4>Case queue</h4><span>RESOLUTION FLOW</span></div><div class="ticket-row"><span>MOZ 1042</span><span>Payment query</span><b class="ticket-status">Resolved</b></div><div class="ticket-row"><span>MOZ 1043</span><span>Account issue</span><b class="ticket-status">Escalated</b></div><div class="ticket-row"><span>MOZ 1044</span><span>Technical issue</span><b class="ticket-status">Follow up</b></div><div class="ticket-row"><span>MOZ 1045</span><span>Account request</span><b class="ticket-status">Resolved</b></div></div></div>
-        <p class="mock-disclaimer">Portfolio demonstration. No real customer records are shown.</p>
-      </div>
-    </div>
+    
 
     <div class="product-human">
       <div class="product-copy">
         <div class="study-kicker">Legends of Aether · Product Analytics</div>
-        <h3>A product dashboard that looks at the player journey</h3>
+        <h3>How each KPI maps to the player journey</h3>
         <p>Instead of showing only four KPI names, the visual follows the journey from first experience to continued use and purchase behavior.</p>
       </div>
-      <div class="product-screen">
-        <div class="ps-top"><span>LEGENDS OF AETHER</span><span>PRODUCT PERFORMANCE · 30 DAY VIEW</span><b>● LIVE DEMO</b></div>
-        <div class="ps-metrics">
-          <div><small>New players</small><strong>24,860</strong><span>+8.4% vs prior period</span></div>
-          <div><small>Day 1 retention</small><strong>31.6%</strong><span>New player cohort</span></div>
-          <div class="alert"><small>Day 7 retention</small><strong>18.9%</strong><span>↓ 4.2 pts after update</span></div>
-          <div><small>DAU</small><strong>7,420</strong><span>Unique daily players</span></div>
-        </div>
-        <div class="ps-main">
-          <div class="ps-chart"><div class="ps-chart-head"><strong>Retention by cohort</strong><span>D1 · D7 · D14</span></div><div class="human-chart"><i style="height:82%"></i><i style="height:68%"></i><i style="height:58%"></i><i style="height:49%"></i><i style="height:43%"></i><i style="height:36%"></i><i style="height:31%"></i><i style="height:27%"></i></div><div class="chart-axis"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span></div></div>
-          <div class="ps-side"><div><small>Onboarding completion</small><strong>74%</strong><span>Completers show longer sessions</span></div><div><small>Event participation</small><strong>42%</strong><span>Viewed event page → started event</span></div><div><small>Purchase conversion</small><strong>6.8%</strong><span>Active players during campaign</span></div></div>
-        </div>
-        <div class="ps-footer"><span>Question</span><strong>Are new players staying engaged?</strong><span>→</span><strong>Retention is the primary KPI</strong></div>
-        <p class="mock-disclaimer">Portfolio demonstration using illustrative data to show the analysis workflow.</p>
-      </div>
+      <div class="product-screen"><div class="ps-top"><span>LEGENDS OF AETHER</span><span>PLAYER JOURNEY · KPI MAP</span><b>● PORTFOLIO DEMO</b></div><div class="journey"><div class="jstage"><small>01 · Come back</small><strong>Retention rate</strong><span>Do new players return after their first session?</span></div><div class="jstage"><small>02 · Stay active</small><strong>DAU</strong><span>How many players are active each day?</span></div><div class="jstage"><small>03 · Spend</small><strong>Conversion rate</strong><span>What share of players complete a purchase?</span></div><div class="jstage"><small>04 · Leave</small><strong>Churn rate</strong><span>How many players are we losing over a period?</span></div></div><div class="ps-footer"><span>Method</span><strong>Question</strong><span>→</span><strong>KPI</strong><span>→</span><strong>Finding</strong><span>→</span><strong>Recommendation</strong></div><p class="mock-disclaimer">Portfolio demonstration of how each KPI maps to a stage of the player journey. No player data is shown.</p></div>
     </div>
   </div>
 </section>
@@ -849,7 +803,7 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
   <div class="wrap">
     <div class="section-head"><span class="num">10</span><h2>Education</h2></div>
     <div class="education">
-      <div class="edu-card"><h3>Economics and Finance</h3><p>Academic foundation in economics, finance, financial decision making, and the relationship between markets, businesses, and capital.</p><div class="pills"><span class="pill">Kabarak University</span><span class="pill">Finance</span><span class="pill">Economics</span></div></div>
+      <div class="edu-card"><h3>Bachelor's Degree, Economics and Finance</h3><div class="role-org">Kabarak University · Sep 2021 to Dec 2025</div><p>Academic foundation in economics, finance, financial decision making, and the relationship between markets, businesses, and capital.</p><div class="pills"><span class="pill">Kabarak University</span><span class="pill">Finance</span><span class="pill">Economics</span></div></div>
       <div class="edu-card"><h3>Practical learning</h3><p>Supplemented academic study with hands on work in executive support, CRM, sales, customer operations, credit analysis, product management, and AI assisted workflows.</p><div class="pills"><span class="pill">Forage</span><span class="pill">HubSpot</span><span class="pill">ALX</span><span class="pill">AI training</span></div></div>
     </div>
   </div>
@@ -873,7 +827,7 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
       <div class="cert"><strong>ALX Virtual Assistant Program</strong><span>End of program assessment</span><p class="certificate-description">Training in remote support, task coordination, communication, organization and professional virtual assistance.</p></div>
       <div class="cert"><strong>Shine Hub VA Certification</strong><span>March to June 2026</span><p class="certificate-description">Practical virtual assistant training covering remote workflows, client support and digital productivity.</p></div>
       <div class="cert"><strong>Independent Travel Management Certificate</strong><span>Dreamport · Amadeus · Sabre · Galileo</span><p class="certificate-description">Covered travel booking workflows, itinerary coordination and the use of major reservation systems.</p></div>
-      <div class="cert"><strong>ICDL Pass Certification</strong><span>Earthrise Studio · 2023</span><p class="certificate-description">Demonstrated foundational digital productivity and computer skills.</p></div>
+      <div class="cert"><strong>ICDL Pass Certification</strong><span>Earthrise Studio · 2023</span><p class="certificate-description">Demonstrated foundational digital productivity and computer skills.</p></div><div class="cert"><strong>Strathmore Mathlete Medal</strong><span>Award</span></div>
     </div>
   </div>
 </section>
@@ -882,7 +836,7 @@ footer{background:var(--ink);color:var(--paper);padding:68px 0 40px}footer h2{co
 <footer id="contact">
   <div class="wrap">
     <h2>Let's talk about the work you need supported, organized, or analyzed.</h2>
-    <p>I am open to remote opportunities across executive support, operations, business support, finance, analysis, CRM, and related roles where I can combine structured execution with an analytical mindset.</p>
+    <p>I am open to remote opportunities across executive support, operations, business support, finance, analysis, CRM, and related roles where I can combine structured execution with an analytical mindset. Based in Kenya and available to cover US and UK business hours remotely.</p>
     <div class="contact-row">
       <a href="mailto:okunclement@gmail.com">okunclement@gmail.com</a>
       <a href="https://linkedin.com/in/clementokun2308001" target="_blank" rel="noopener">linkedin.com/in/clementokun2308001</a>
